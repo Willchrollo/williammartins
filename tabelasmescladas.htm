@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas com colspan e rowlspan</title>
+    <style>
+        body{
+            background-color:rgba(128, 255, 0, 0.456) ;
+        }
+        a{
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: gold;
+            color: black;
+        }
+        table{background-color: white;}
+       
+    </style>
+</head>
+<h1>Praticando tabelas mescladas</h1>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="3">coluna 1,2,3 linha 1</td>
+            <td rowspan="3">coluna 2 linha 1,2,3</td>
+        </tr>
+        <tr>
+            <td> linha2 </td>
+            <td>l2 c2</td>
+        </tr>
+        <tr>
+            <td> linha 3 c1</td>
+            <td>l3 c2</td>
+        </tr>
+        <tr>
+            <td>linha 4</td>
+            <td colspan="3"> l4 c2,3</td>
+           
+        </tr>
+        <tr>
+            <td colspan="4"> todas as colunas</td>
+        </tr>
+    </table>
+    <h2>exemplo de tabela visto na internet</h2>
+    <div style="display: flex; align-items: center;">
+    <table border="2" summary="notas de 1999/2000">
+        <caption> notas de 1999/2000</caption>
+        <tr>
+            <th style="color: blue;">ALUNO</th>
+            <td style="color: blue;">Frequência</td>
+            <td style="color: blue;"> 1 chamada</td>
+            <td style="color: blue;"> 2 chamada</td>
+            <th style="color: blue;">final</th>
+        </tr>
+        <tr>
+            <td style="background-color: darksalmon; text-align: center;">ana maria</td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; " > 12,5 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; "> 14,2 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; ">    </td>
+            <td style="background-color: crimson; text-align: center;" > 14 </td>
+        </tr>
+        <tr>
+            <td style="background-color: darksalmon; text-align: center;">joão</td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; "> 11,5 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; "> 12,2 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; ">    </td>
+            <td style="background-color: crimson; text-align: center;"> 13 </td>
+        </tr>
+        <tr>
+            <td style="background-color: darksalmon;">Rui Manoel</td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; "> 12,5 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; "> 13,2 </td>
+            <td style="color: darkgreen;; background-color: yellow; text-align: center; ">    </td>
+            <td style="background-color: crimson; text-align: center;"> 13 </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center; color: blue;"><b>Média</b></td>
+            <td style="color: blue ; text-align: center;"> 13,3 </td>
+
+        </tr>
+    </table>
+    <br>
+    <img src="tabelabaseada.jpg" alt="tabela" width="500" height="300" style="margin-left: 20px;">
+    </div>
+    <ul>
+        <li>
+            <a href="index.html">voltar ao menu</a>
+        </li>
+    </ul>
+
+    
+</body>
+</html>

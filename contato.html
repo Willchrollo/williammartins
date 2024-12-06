@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column; /*organiza os demais elementos em uma coluna*/
+            justify-content: center; /*alinhar os elementos no centro no eixo vertical*/
+            align-items: center;/*alinhar os elementos no centro no eixo horizontal*/
+            height: 100vh; /* Altura total da janela */
+            background-color: rgba(128, 255, 0, 0.456);
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(6, 98, 6, 0.692);
+            text-align: center;/*centralizar o texto*/
+            font-size: 35px;
+            width: 100%;/*fazer com que ocupe toda largura da tela*/
+        }
+
+        a {
+            background-color: rgba(128, 255, 0, 0.456);
+            text-decoration: none;
+            border-radius: 10px; /*adicionar bordas arrendondadas*/
+            padding: 10px 20px;
+            font-size: 25px;
+        }
+
+        a:hover {
+            background-color: gold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+            background:rgba(6, 98, 6, 0.692);
+            border-radius: 8px;
+            border: solid gold 3px;
+        }
+
+        h1 {
+            color: gold;
+        }
+
+        form {
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Espaço entre os campos */
+            color: white;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+      
+
+        input, textarea {
+            font-size: 18px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTATO</h1>
+        <div id="menu">
+            <a href="index.html">Voltar ao menu</a>
+        </div>
+    </header>
+
+    <section>
+        <form action="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" size="35" placeholder="Digite seu nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="50" placeholder="Digite seu e-mail">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

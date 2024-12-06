@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            display: grid;
+        }
+        .container{
+            display: grid;
+        }
+        header{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: darkslateblue 
+        }
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12 ;
+            justify-content: center;
+            gap: 20px
+        }
+        ul{
+            list-style-type: none;
+            color: darkblue;
+        }
+        li{
+            float: left;
+            
+        }
+        a{
+            color:darkblue;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid black 1px;
+        }
+        a:hover{
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+        .controle{grid-column-start:1 ;
+            grid-column-end: 3;}
+       
+    
+        .principal{
+            grid-column-start:4 ;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+          
+        }
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:darkslateblue;
+            color: white;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Controle de Tráfego Aéreo</h1>
+    </header>
+    <nav class="container menu">
+         <ul>
+            <li><a href="torre.html">Torre de controle (TWR)</a></li>
+            <li><a href="app.html">Controle de Aproximação (APP)</a></li>
+            <li><a href="acc.html">Centro de controle de Área (ACC)</a></li>
+            <li><a href="index.html">Voltar ao menu</a></li>
+         </ul>
+    </nav>
+    <div class="container controle">
+        <aside>
+            <img src="controlador.jpg" width="400px">
+                <p><strong>Controlador do APP-SP</strong></p>
+            </div>
+
+        </aside>
+    </div>
+    <section style="background-color: rgba(71, 61, 139, 0.238) ;" class="principal container">
+       <h1> Controle de Tráfego Aéreo no Brasil</h1> 
+       <p style="font-size: 25px;">
+
+        Os<b> controladores</b> de tráfego aéreo no Brasil desempenham um papel fundamental na 
+        segurança e na eficiência das operações aéreas. Esses profissionais altamente treinados são responsáveis por 
+        monitorar e gerenciar o movimento das aeronaves no
+         espaço aéreo e nos aeroportos, garantindo que todas as aeronaves mantenham uma distância segura umas das
+          outras e sigam os procedimentos corretos.
+        
+        <b>Os controladores de tráfego
+         aéreo atuam em três setores principais: a Torre de Controle, o Controle de Aproximação e o Controle de Centro.</b> Cada um desses setores 
+         desempenha um papel vital na coordenação e segurança do tráfego aéreo, assegurando que as aeronaves sigam os procedimentos adequados desde a
+          decolagem até o pouso e durante o voo.</p>
+    </section>
+    <footer class="container">
+        <h1>prática e portfólio</h1>
+
+  
+
+    
+</body>
+</html>

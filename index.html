@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+    <style>
+        * {
+        
+            margin: 0; /*Remove todas as margens e preenchimentos padrões dos elementos*/
+            padding: 0;
+        }
+        body {
+            margin: 0 auto;
+            background-color: rgba(128, 255, 0, 0.456);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Organiza os elementos como uma coluna, de cima para baixo.*/
+           
+        }
+        header {
+            background-color:rgba(6, 98, 6, 0.692);
+            text-align: center;
+            padding: 20px;
+        }
+        header p {
+            font-size: 40px;
+            color: white;
+        }
+        section {
+            margin: 40px;
+            }
+        .portfolio {
+            text-align: center;
+            font-size: 40px;
+            background-color: rgba(6, 98, 6, 0.692);
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        nav ul { /*alinhar menu*/
+            display: flex; /*Usa flexbox para organizar os itens da lista*/
+            justify-content: center; /*centralizar horizontalmente*/
+            gap: 40px;
+            list-style-type: none;
+            padding: 20px 0;
+        }
+        nav li {
+            position: relative; /* A posição relativa para permitir posicionamento absoluto dos submenus*/
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: rgba(6, 98, 6, 0.692);
+        }
+        nav li a {
+            color: white;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: gold;
+            color: black; /* efeito ao passar o mouse em cima do menu*/
+        }
+        nav li ul {
+            display: none; /*Oculta o submenu inicialmente.*/
+            position: absolute; /*Posiciona o submenu abaixo do principal.*/
+            top: 100%;
+            background-color: rgba(6, 98, 6, 0.692);
+            list-style-type: none; /*remover os marcadores*/
+            padding: 0;
+            margin: 0;
+            border-radius: 10px;
+        }
+        nav li:hover ul {
+            display: block; /* Mostra o submenu ao passar o mouse */
+        }
+        nav li ul li {
+            width: 150px; 
+        }
+        nav li ul li a {
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(6, 98, 6, 0.692);
+            color: white;
+            font-size: 24px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Trabalho da Disciplina: Fundamentos da Programação Web</p>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <span class="portfolio">Portfólio Pessoal</span>
+        </div>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="sobremim.htm">SOBRE MIM</a></li>
+                    <li><a href="formação.html">Formação Educacional</a></li>
+                    <li>
+                        <a href="#">Portfólio</a>
+                        <ul>
+                            <li><a href="portfolio1.html">Projeto 1</a></li>
+                            <li><a href="tabelasmescladas.htm">Projeto 2</a></li>
+                            <li><a href="toshiropage.html">Projeto 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito por William Martins de Araujo</p>
+    </footer>
+</body>
+</html>
